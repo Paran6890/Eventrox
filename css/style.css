@@ -1,0 +1,308 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a,a:focus,a:hover{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+
+/* header part css start */
+nav{
+    background: transparent;
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
+}
+nav ul li{
+    padding-top: 10px;
+}
+
+nav ul li a {
+    position: relative;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fefefe;
+    text-transform: capitalize;
+    margin-left: 50px; 
+   
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+}
+nav ul li a:hover{
+    color: #fefefe;
+}
+nav ul li a::after{
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(247,0,104) 0%,rgba(68,16,102,1) 100%);
+    transform: scale(-1);
+    opacity: 0;
+    content: "";
+    transition: .4s;
+
+}
+nav ul li a:hover::after{
+    transform: scale(1);
+    opacity: 1;
+
+}
+nav ul li .srce{
+    font-size: 25px;
+    color: #fefefe;
+    margin-left: 50px;
+    cursor: pointer;
+ 
+}
+
+
+
+
+
+nav ul .btnn{
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fefefe;
+    background: #ec167f;
+    border-radius: 10px;
+    transition:.4s;
+}
+nav ul .btnn:hover{
+    background: #fefefe;
+    color: #ec167f;
+}
+.fixed{
+    position: fixed !important;
+    top: 0;
+    left: 0 !important;
+    background: rgba(255, 105, 175, 0.5);
+    animation: paran .4s;
+
+}
+@keyframes paran{
+    from{
+        top: -80px;
+    }
+
+    to{
+        top: 0;
+    }
+}
+
+/* header part css end */
+
+
+
+/* popup start */
+.box{
+    display: none;
+    padding: 100px;
+    background: rgba(0, 0, 0, .4);
+
+}
+.pad{
+    border: 5px solid rgb(134, 127, 127);
+}
+.box .btn{
+    background: #ec167f !important;
+    color: #fefefe !important;
+    transition: .4s;
+    
+}
+.box .btn:hover{
+    color: #ec167f !important;
+    background: #fefefe !important;
+
+}
+
+.padd{
+    padding: 35px;
+   
+}
+
+
+/* popup end*/
+
+
+/* banner part css start */
+
+.banner{
+    background: url(../images/1.jpg) no-repeat center;
+    background-size: cover;
+
+   
+   
+}
+.banner2{
+    background: url(../images/2.jpg) no-repeat center;
+    background-size: cover;
+   
+}
+
+.banner .overlay{
+    background: rg(104, 104,104, .7);
+    width: 100%;
+    height: 100%;
+    padding: 250px 0 200px;
+}
+.banner .overlay .text{
+    text-align: center;
+}
+
+
+.banner .overlay .text h6{
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #faaC1D;
+    text-transform: capitalize;
+}
+.banner .overlay .text h1{
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.banner .overlay .text ul li{
+display: inline-block;
+font-size: 18px;
+color: #ffffff;
+margin: 0 10px;
+text-transform: uppercase;
+}
+
+.banner .overlay .text ul li span{
+    color: #faaC1D;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.banner .overlay .text a{
+    margin-top: 30px;
+display: inline-block;
+padding: 10px 16px;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+color: #ffffff;
+text-transform: capitalize;
+background:#faaC1D;
+border-radius: 5px;
+transition: .4s;
+}
+
+.banner .overlay .text a:hover{
+    color:#faaC1D;
+    background: #ffffff;
+}
+
+/* banner part css end */
+
+
+
+/* count-css-start */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #count-down ul{
+   
+  }
+
+
+  #count-down li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: inline-block;
+    
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  #count-down li span {
+    display: block;
+    font-size: 4.5rem;
+    margin-left: 60px;
+  }
+  
+
+ 
+  
+
+  .count-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(to right, rgba(247,0,104) 0%,rgba(68,16,102,1) 100%);
+    margin: 0 auto;
+    padding: 0.5rem;
+   
+  }
+/* count-css-end */
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+              goto top button  start
+============================== */
+.btop{
+    display: none;
+    position: fixed;
+    background: #e1137b;
+   padding: 5px 10px;
+    bottom: 50px;
+    right: 50px;
+    color: #dddddd;
+    font-size: 22px;
+    transition: .4s;
+}
+.btop:hover{
+    background: #4c35a9;
+    color: #fff;
+}
+
+/* ================================
+              goto top button end
+============================== */
