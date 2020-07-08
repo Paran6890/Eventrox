@@ -32,6 +32,13 @@
 /* banner-part- css end */
 
 
+/* count-css-start */
+#count-down {
+    width: 98%;
+}
+
+/* count-css-end */
+
 
 /* event-part- css start */
 #event-about .title{
@@ -107,7 +114,7 @@ figure{
     padding-top: 20px;
 }
 .taitle h3{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #join-event .text-content ul li{
